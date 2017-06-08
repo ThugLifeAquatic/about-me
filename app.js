@@ -31,6 +31,17 @@ while (isLegal === false) {
   }
 }
 
+function yesNO() {
+  var questions = ['Can I dunk a basketball', 'Do I have a cat?','Am I from Seattle?', 'Am I married?', 'Is Gandalf a jedi?'];
+  var answers = ['no', 'yes', 'no', 'yes', 'no'];
+  //Congrats Messages
+  var congrats0 = 'Your right! Gravity has an unusually strong hold on me';
+  var congrats1 = 'Correct. I am from Kansas.';
+  var congrats2 = 'Her name is Chelsea, and she\'s a photographer.';
+  var congrats3 = 'A fellow geek!';
+  var congrats4 = 'Yep! Her name is princess Leia.';
+}
+
 var hasCat = prompt('Do I have a cat?').toLowerCase();
 if (hasCat === 'yes' || hasCat === 'y') {
   alert('Yep! Her name is princess Leia.');
@@ -118,6 +129,7 @@ trys = 1;
 
 for (var i = 6; i > 0; i--) {
   var guessPet = prompt('Guess a pet I\'ve owned other than a cat or dog.');
+  console.log(hints[i]);
   if (petAnimals.indexOf(guessPet.trim().toLowerCase()) >= 0) {
     alert('Nailed it! You got one on try # ' + trys + '. Correct answers include: lizard, goat, octopus, horse, and chicken');
     console.log('User guessed correctly.');
@@ -125,7 +137,7 @@ for (var i = 6; i > 0; i--) {
     break;
   } else if (i > 1) {
     alert('Wrong! You have ' + i + ' tries left. Hint: ' + hints[i - 1]);
-    console.log('User guessed incorrectly. Guess: ' + guessPet + '.');
+    console.log('User guessed incorrectly. Guess: ' + guessPet + '.' );
     trys++;
   } else {
     alert('You\'re out of guesses. Correct answers include: lizard, goat, octopus, horse, and chicken');
