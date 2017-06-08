@@ -7,7 +7,6 @@ console.log('Users name is ' + name + '.')
 
 // //Keeps score
 var score = 0;
-var correct = false;
 var isLegal;
 var targetNum = Math.floor(Math.random() * (11 - 1)) + 1;
 console.log('targetNum is ' + targetNum + '.');
@@ -118,7 +117,7 @@ var hints = ['1 is a reptile!', '1 is a cephalapod!', '1 is a horse, like litera
 trys = 1;
 
 for (var i = 6; i > 0; i--) {
-  var guessPet = prompt('Guess an pet I\'ve owned other than a cat or dog.');
+  var guessPet = prompt('Guess a pet I\'ve owned other than a cat or dog.');
   if (petAnimals.indexOf(guessPet.trim().toLowerCase()) >= 0) {
     alert('Nailed it! You got one on try # ' + trys + '. Correct answers include: lizard, goat, octopus, horse, and chicken');
     console.log('User guessed correctly.');
@@ -133,7 +132,6 @@ for (var i = 6; i > 0; i--) {
     console.log('User is out of guesses. Last guess: ' + guessPet + '.');
   }
 }
-
 
 
 //Results

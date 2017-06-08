@@ -2,10 +2,29 @@ h1, h2, p, ul, li {
   font-family: "Arial", Verdana, sans-serif;
 }
 
+.hi {
+  font-size: 300%;
+  margin-top: 250px;
+  margin-bottom: -250px;
+  margin-left: 250px;
+}
+
 img {
   border: 1px solid #ddd;
   border-radius: 10px;
   display: block;
   margin: auto;
   width: 25%
+}
+
+.ribbon {
+  margin-top: -375px;
+  margin-bottom: 300px;
+  background-image: url('TurtleBird.png');
+  background-size: 6.2%;
+  padding-bottom: 108px;
+}
+
+.ribbon h1 {
+  text-align: center;
 }
