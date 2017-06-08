@@ -3,7 +3,7 @@
 alert('Welcome! Let\'s play a guessing game!');
 alert('You\'ll be answering questions about me, Austin Cohrs');
 var name = prompt('What should I call you?');
-console.log('Users name is ' + name + '.')
+console.log('Users name is ' + name + '.');
 
 // //Keeps score
 var score = 0;
@@ -26,8 +26,8 @@ while (isLegal === false) {
     console.log('Question 1 WRONG. User score is ' + score + '.');
     isLegal = true;
   } else {
-    alert('That doesn\'t compute...you\'re under arrest! Psych. Please answer "yes", "no", or "y","n"')
-    console.log('User entered an illegal response.')
+    alert('That doesn\'t compute...you\'re under arrest! Psych. Please answer "yes", "no", or "y","n"');
+    console.log('User entered an illegal response.');
   }
 }
 
@@ -40,8 +40,8 @@ if (hasCat === 'yes' || hasCat === 'y') {
   alert('WRONG! Her name is Princess Leia.');
   console.log('Question 2 WRONG. User score is ' + score + '.');
 } else {
-  alert('That doesn\'t compute...you\'re under arrest! Psych. Please answer "yes", "no", or "y","n"')
-  console.log('User entered an illegal response.')
+  alert('That doesn\'t compute...you\'re under arrest! Psych. Please answer "yes", "no", or "y","n"');
+  console.log('User entered an illegal response.');
 }
 var fromWhere = prompt('Am I from Seattle?').toLowerCase();
 if (fromWhere === 'no' || fromWhere === 'n') {
@@ -52,8 +52,8 @@ if (fromWhere === 'no' || fromWhere === 'n') {
   alert('WRONG! I am from Kansas.');
   console.log('Question 3 WRONG. User score is ' + score + '.');
 } else {
-  alert('That doesn\'t compute...you\'re under arrest! Psych. Please answer "yes", "no", or "y","n"')
-  console.log('User entered an illegal response.')
+  alert('That doesn\'t compute...you\'re under arrest! Psych. Please answer "yes", "no", or "y","n"');
+  console.log('User entered an illegal response.');
 }
 var isMarried = prompt('Am I married?').toLowerCase();
 if (isMarried === 'yes' || isMarried === 'y') {
@@ -64,8 +64,8 @@ if (isMarried === 'yes' || isMarried === 'y') {
   alert('WRONG! Her name is Chelsea and she\'s a photographer.');
   console.log('Question 4 WRONG. User score is ' + score + '.');
 } else {
-  alert('That doesn\'t compute...you\'re under arrest! Psych. Please answer "yes", "no", or "y","n"')
-  console.log('User entered an illegal response.')
+  alert('That doesn\'t compute...you\'re under arrest! Psych. Please answer "yes", "no", or "y","n"');
+  console.log('User entered an illegal response.');
 }
 var gandalfJedi = prompt('Is Gandalf a jedi?').toLowerCase();
 if (gandalfJedi === 'no' || gandalfJedi === 'n') {
@@ -76,8 +76,8 @@ if (gandalfJedi === 'no' || gandalfJedi === 'n') {
   alert('Get out.');
   console.log('Question 5 WRONG. User score is ' + score + '.');
 } else {
-  alert('That doesn\'t compute...you\'re under arrest! Psych. Please answer "yes", "no", or "y","n"')
-  console.log('User entered an illegal response.')
+  alert('That doesn\'t compute...you\'re under arrest! Psych. Please answer "yes", "no", or "y","n"');
+  console.log('User entered an illegal response.');
 }
 
 //Question 6, # game.
@@ -106,7 +106,7 @@ for (var i = 4; i > 0; i--) {
     console.log('User entered an illegal guess: ' + guessNum + '.');
     trys++;
   } else {
-    alert('You\'re out of guesses. The # was ' + targetNum + '.')
+    alert('You\'re out of guesses. The # was ' + targetNum + '.');
     console.log('User is out of guesses. Last Guess: ' + guessNum + '.');
   }
 }
@@ -121,7 +121,7 @@ for (var i = 6; i > 0; i--) {
   if (petAnimals.indexOf(guessPet.trim().toLowerCase()) >= 0) {
     alert('Nailed it! You got one on try # ' + trys + '. Correct answers include: lizard, goat, octopus, horse, and chicken');
     console.log('User guessed correctly.');
-    score++
+    score++;
     break;
   } else if (i > 1) {
     alert('Wrong! You have ' + i + ' tries left. Hint: ' + hints[i - 1]);
@@ -132,7 +132,6 @@ for (var i = 6; i > 0; i--) {
     console.log('User is out of guesses. Last guess: ' + guessPet + '.');
   }
 }
-
 
 //Results
 alert('You got ' + score + ' out of 7 Correct.');
