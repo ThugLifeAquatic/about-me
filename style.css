@@ -1,25 +1,127 @@
+body {
+  background: #dbe2e6;
+}
+
 * {
-  border: 1px solid black;
+  / border: 1px solid black;
 }
 
 h1, h2, p, ul, li {
   font-family: "Arial", Verdana, sans-serif;
 }
 
-.hero {
+p {
+  font-size: 20px;
+}
 
+.hero {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+#stripe {
+  width: 100%;
+  background-image: url("TurtleBird.png");
+  background-position: center;
+  box-shadow: 2px 2px 2px grey, 2px -2px 2px grey;
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+  background-size: 20%;
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  margin-top: 16%;
+  margin-bottom: 20%;
+  position: absolute;
+  z-index: -1;
 }
 
 .hi {
+  color: white;
+  text-align: center;
+  text-shadow: -1px 0 black, 2px 1px black, 1px 2px black, 0 -1px black;
+  position: absolute;
   font-size: 300%;
-  float: left;
-  margin-top: 200px;
+  margin-top: 11%;
+  width: 30%;
 }
 
 img {
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  border: 5px solid #29fdd7;
+  border-radius: 200px;
   display: block;
+  width: 30%;
   margin: auto;
-  width: 25%
+  box-shadow: 2px 2px 2px grey, 2px -2px 2px grey, -2px 2px 2px grey, -2px -2px 2px grey;
+}
+
+.about {
+  width: 90%;
+  margin: auto;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.pHeads {
+  color: white;
+  background: #29fdd7;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: .8%;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  text-shadow: -1px 0 black, 2px 1px black, 1px 2px black, 0 -1px black;
+  box-shadow: 2px 2px 2px grey;
+}
+
+.lists {
+  width: 80%;
+  margin: auto;
+}
+
+.listSection {
+  width: 29.3%;
+  display: inline-block;
+  text-align: center;
+  margin: 2%;
+  margin-bottom: 10%;
+  float: left;
+}
+
+.listSection h2 {
+  border-radius: 15px;
+  display: block;
+  color: white;
+  background: #29fdd7;
+  padding: 2%;
+  border: 5px solid white;
+  box-shadow: 3px 3px 3px grey;
+  text-shadow: -1px 0 black, 2px 1px black, 1px 2px black, 0 -1px black;
+}
+
+.listSection h2:hover {
+  box-shadow: 1px 1px 1px grey;
+}
+
+.listSection ul, .listSection ol {
+  transition: color .5s ease;
+  color: #dbe2e6;
+}
+
+.listSection h2:hover~ul, .listSection h2:hover~ol {
+  display: block;
+  color: black;
+}
+
+ul:hover {
+  color: black;
+}
+
+ol:hover {
+  color: black;
 }
