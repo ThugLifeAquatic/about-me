@@ -1,4 +1,5 @@
 //A simple quiz that asks the user Y/N questions and keeps score.
+//Final Code
 'use strict';
 alert('Welcome! Let\'s play a guessing game!');
 alert('You\'ll be answering questions about me, Austin Cohrs');
