@@ -51,7 +51,7 @@ function yesNO() {
   for (var i = 0; i < 5; i++) {
     console.log(answers);
     console.log(correct);
-    var response = prompt(questions[i]);
+    var response = prompt(questions[i]).toLowerCase();
     if (answers[i].includes(response)) {
       console.log(answers[i].includes(response));
       alert(correct[i]);
@@ -60,6 +60,7 @@ function yesNO() {
       alert(incorrect[i]);
     } else {
       alert(notlegal);
+      i--;
     }
   }
 }
